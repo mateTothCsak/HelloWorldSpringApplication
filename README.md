@@ -7,7 +7,6 @@
 * Maven
 * Spring Boot
 * MySQL
-* Hibernate
 * Tomcat
 
 ---
