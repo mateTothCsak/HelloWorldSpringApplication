@@ -1,5 +1,5 @@
 
-*The goal of this asignment is to return the message "Hello World" to the browser from a database through an Http request.*
+*The goal of this assignment is to return the message "Hello World" to the browser from a database through an Http request.*
 
 ---
 
@@ -18,16 +18,19 @@ The Message model consists of id and text only.
 Here is an example query:
 
 
+
 > CREATE DATABASE dbname;
 
-> CREATE TABLE message ( id smallint unsigned not null auto_increment, text varchar(45) not null, constraint pk_example primary key (id) );
+> USE dbname;
+
+> CREATE TABLE message ( id INT AUTO_INCREMENT NOT NULL, text VARCHAR(255) NOT NULL, PRIMARY KEY (id));
 
 > INSERT INTO message( id, text) VALUES ( null, 'Hello World' );
 
 Don't forget to fill out the application.properties file with your own database url, username and password.
 
 Once these steps are done we can deploy our app in Tomcat.
-//In case using Ubuntu
+
 Step into your project directory in terminal - you should be at the same level with pom.xml
 > mvn eclipse:eclipse
 
